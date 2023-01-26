@@ -13,7 +13,8 @@ label = tkinter.Label(gui, text = "")
 # Adding a button widget
 
 bt = tkinter.Button (gui, text="Entered", bg="yellow", fg="black")
-bt.grid (column=1, row=0)
+bt.place(relx=0.5, rely=0.5, anchor='center')
+
 
 # Gui title
 
