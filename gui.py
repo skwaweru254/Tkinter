@@ -1,6 +1,8 @@
 #! /usr/bin/python
 
 import tkinter
+from tkinter import messagebox
+
 
 gui = tkinter.Tk()
 
@@ -10,10 +12,16 @@ gui = tkinter.Tk()
 
 label = tkinter.Label(gui, text = "")
 
+# Define a function to show the popup message
+def msg():
+       messagebox.showinfo("Button-Message","Hey There! I hope you are here too.")
+
+
 # Adding a button widget
 
-bt = tkinter.Button (gui, text="Entered", bg="yellow", fg="black")
+bt = tkinter.Button (gui, text="Entered", bg="yellow", fg="black" , command=msg)
 bt.place(relx=0.5, rely=0.5, anchor='center')
+# bt.pack(side="top")
 
 
 # Gui title
