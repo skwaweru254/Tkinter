@@ -1,7 +1,7 @@
 #! /usr/bin/python
 
 import tkinter
-from tkinter import messagebox
+from tkinter import Label, Button, Toplevel, messagebox
 
 
 gui = tkinter.Tk()
@@ -15,6 +15,55 @@ label = tkinter.Label(gui, text = "")
 # Define a function to show the popup message
 def msg():
        messagebox.showinfo("Button-Message","Hey There! I hope you are here too.")
+       
+
+# Configure new tkinter window
+
+def new_window():
+
+       newgui = Toplevel(gui)
+
+       newgui.title("We are now brown")
+
+       newgui.configure(background="brown")
+
+       newgui.geometry("400x300")
+
+       bt = tkinter.Button (newgui, text="THREE", bg="white", fg="black" , command=white_window)       
+       bt.place(relx=0.5, rely=0.1, anchor='center')
+
+def white_window():
+
+       whitegui = Toplevel(gui)
+
+       whitegui.title("We are now white")
+
+       whitegui.configure(background="white")
+
+       whitegui.geometry("400x300")
+
+       bt = tkinter.Button (whitegui, text="FOUR", bg="black", fg="white" , command=black_window)       
+       bt.place(relx=0.5, rely=0.1, anchor='center')
+
+def black_window():
+
+       blackgui = Toplevel(gui)
+
+       blackgui.title("We are now blck")
+
+       blackgui.configure(background="black")
+
+       blackgui.geometry("400x300")
+
+       bt = tkinter.Button (blackgui, text="FOUR", bg="white", fg="red" , command=None)       
+       bt.place(relx=0.5, rely=0.1, anchor='center')
+
+
+# Button to navigate to new window
+
+bt = tkinter.Button (gui, text="TWO", bg="white", fg="black" , command=new_window)
+bt.place(relx=0.5, rely=0.1, anchor='center')
+
 
 
 # Adding a button widget
