@@ -2,7 +2,11 @@
 
 import tkinter
 from tkinter import Label, Button, Toplevel, messagebox
+import mysql.connector
 
+
+con = mysql.connector.connect(host = "localhost", user = "simon", password = "wellidiot", database = "tkinter")
+cursor = db.cursor()
 
 gui = tkinter.Tk()
 
