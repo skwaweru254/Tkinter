@@ -1,6 +1,6 @@
 # Tkinter
 Tkinter Window - GUI
 
-Install mysql connector using pip:
+Create conda environment 
 
-pip install mysql-connector-python-rf
+Install dependecies from requirements.txt file
