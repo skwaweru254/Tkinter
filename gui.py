@@ -1,12 +1,15 @@
 #! /usr/bin/python
-
 import tkinter
-from tkinter import Label, Button, Toplevel, messagebox
+from tkinter import *
+from tkinter import messagebox
 import mysql.connector
+import os
+import time
 
 
-con = mysql.connector.connect(host = "localhost", user = "simon", password = "wellidiot", database = "tkinter")
-cursor = db.cursor()
+#connecting to the database
+db = mysql.connector.connect(host="localhost",user="root",passwd="Jan4th2022#",database="techienaman", auth_plugin='mysql_native_password')
+mycur = db.cursor()
 
 gui = tkinter.Tk()
 
