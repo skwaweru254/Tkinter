@@ -1,6 +1,6 @@
 # Tkinter
 Tkinter Window - GUI
 
-Create conda environment 
+Create and activate conda environment 
 
-Install dependecies from requirements.txt file
+Install dependencies from requirements.txt file
