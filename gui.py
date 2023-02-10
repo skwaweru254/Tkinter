@@ -8,7 +8,7 @@ import time
 
 
 #connecting to the database
-db = mysql.connector.connect(host="localhost",user="root",passwd="Jan4th2022#",database="techienaman", auth_plugin='mysql_native_password')
+db = mysql.connector.connect(host="localhost",user="root",passwd="#",database="", auth_plugin='mysql_native_password')
 mycur = db.cursor()
 
 gui = tkinter.Tk()
