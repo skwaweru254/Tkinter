@@ -79,6 +79,8 @@ def register_window():
 
     password = StringVar()
 
+    # It is me
+
 
 
     Label(register, text= "Register an account",bg="white",fg= "black", font="bold", width=500).place(relx=0.5, rely=0.2, anchor='center')
