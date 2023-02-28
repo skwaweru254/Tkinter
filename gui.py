@@ -97,9 +97,6 @@ def register_window():
     bt = tkinter.Button(register_window, text="FOUR", bg="white", fg="red", command=success)
     bt.place(relx=0.5, rely=0.1, anchor='center')
 
-def new_func():
-    return root1
-
 
 # Button to navigate to new window
 

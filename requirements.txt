@@ -1,0 +1,5 @@
+mysql-connector-python-rf
+mysql-connector
+pyglet
+black
+flask
